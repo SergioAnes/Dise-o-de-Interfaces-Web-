@@ -1,0 +1,365 @@
+body {
+			font-family: Tahoma;
+			color: #9B9EAC;
+			background: #DCF0DA;
+			font-size: 10pt;
+
+		}
+
+.celdaX {
+
+			color: #275211;
+			font-family: Comic Sans MS;
+			font-size: 9pt;
+
+		}
+
+.celdaSinX {
+
+			background: #C9C988;
+			line-height: 1.3em;
+			font-size: 9pt;
+
+		}		
+
+		@media (min-width: 400px) {
+
+			body {
+
+				font-size: 11pt;
+
+			}
+
+		}
+
+		@media (min-width: 800px) {
+
+			body {
+
+				font-size: 12pt;
+
+			}
+
+		}
+
+
+		@media (min-width: 1200px) {
+
+			body {
+
+				font-size: 13pt;
+
+			}
+
+		}
+
+h1, h2 {
+
+	font-family:Arial; 
+	color:#5D1B30;
+
+}				
+	
+
+@media (min-width: 501px) {
+
+
+		.celdaX {
+
+			color: #275211;
+			font-family: Comic Sans MS;
+			font-size: 11pt;
+
+		}
+
+		.celdaSinX {
+
+			background: #C9C988;
+			line-height: 1.3em;
+			font-size: 11pt;
+
+		}
+}	
+
+
+@media (min-width: 1000px) {
+
+
+		.celdaX {
+
+			color: #275211;
+			font-family: Comic Sans MS;
+			font-size: 12pt;
+
+		}
+
+		.celdaSinX {
+
+			background: #C9C988;
+			line-height: 1.3em;
+			font-size: 12pt;
+
+		}
+}			
+
+
+
+	#cuerpo div {
+
+	font-family: Calibri;
+	font-style: italic;
+	color: 324EED;
+	background: #4D8365;
+	line-height: 1.6em;
+	height: 200px; width: 600px;
+	font-size: 9pt;
+
+
+	}
+
+
+
+@media (min-width: 451px) {
+	
+	#cuerpo div {
+
+	font-family: Calibri;
+	font-style: italic;
+	color: 324EED;
+	background: #4D8365;
+	line-height: 1.6em;
+	height: 200px; width: 600px;
+	font-size: 10pt;
+
+	}
+
+}
+
+
+@media (min-width: 900px) {
+	
+	#cuerpo div {
+
+	font-family: Calibri;
+	font-style: italic;
+	color: 324EED;
+	background: #4D8365;
+	line-height: 1.6em;
+	height: 200px; width: 600px;
+	font-size: 11pt;
+
+	}
+
+}
+
+	p {
+
+		font-family: Verdana;
+		font-weight: bold;
+		font-size: 7pt;
+		line-height: 2.0em;
+
+
+	}
+
+
+@media (min-width: 476px) {
+
+	p {
+
+		font-family: Verdana;
+		font-weight: bold;
+		font-size: 8pt;
+		line-height: 2.0em;
+
+
+	}
+
+}
+
+@media (min-width: 951px) {
+
+	p {
+
+		font-family: Verdana;
+		font-weight: bold;
+		font-size: 9pt;
+		line-height: 2.0em;
+
+
+	}
+
+}
+
+@media (min-width: 1335px) {
+
+	p {
+
+		font-family: Verdana;
+		font-weight: bold;
+		font-size: 10pt;
+		line-height: 2.0em;
+
+	}
+
+}
+
+ #cuerpo p div { /*por que no aplica formato alguno al div que esta dentro del parrafo */
+
+color: red;
+
+}
+
+
+/*6*/
+
+	span {
+
+
+	font-family: Times New Roman;
+	color: #662032;
+	background: #B5B4D4;
+	line-height: 1.36em;
+	font-size: 8pt;
+
+
+	}
+
+
+@media (min-width: 376px) {
+
+	span {
+
+
+	font-family: Times New Roman;
+	color: #662032;
+	background: #B5B4D4;
+	line-height: 1.36em;
+	font-size: 9pt;
+
+
+	}
+
+}
+
+@media (min-width: 750px) {
+
+	span {
+
+
+	font-family: Times New Roman;
+	color: #662032;
+	background: #B5B4D4;
+	line-height: 1.36em;
+	font-size: 11pt;
+
+
+	}
+
+}
+
+
+@media (min-width: 1150px) {
+
+	span {
+
+
+	font-family: Times New Roman;
+	color: #662032;
+	background: #B5B4D4;
+	line-height: 1.36em;
+	font-size: 13pt;
+
+
+	}
+
+}
+
+
+/*7*/
+
+	ol {
+
+	font-family: Georgia;
+	color: #0F4B52;
+	font-size: 7pt;
+
+
+
+	}
+
+
+@media (min-width: 600px) {
+
+	ol {
+
+	font-family: Georgia;
+	color: #0F4B52;
+	font-size: 9pt;
+
+
+
+	}
+}
+
+
+@media (min-width: 1200px) {
+
+	ol {
+
+	font-family: Georgia;
+	color: #0F4B52;
+	font-size: 11pt;
+
+
+
+	}
+}
+
+
+/*8*/
+
+	tr {
+
+	font-family: Coimbra;
+	color: #406F32;
+	font-size: 9pt;
+
+	}
+
+
+@media (min-width: 526px) {
+
+	tr {
+
+	font-family: Coimbra;
+	color: #406F32;
+	font-size: 10pt;
+
+
+	}
+}
+
+
+@media (min-width: 1050px) {
+
+	tr {
+
+	font-family: Coimbra;
+	color: #406F32;
+	font-size: 11pt;
+
+
+
+	}
+}
+
+
+/*9*/
+img {
+
+
+	width: 50px;
+	height: 50px;
+
+}
