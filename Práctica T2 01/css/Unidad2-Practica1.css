@@ -1,0 +1,87 @@
+
+header {
+
+	text-align: center;
+	font-size: 27px;
+
+}
+
+.tabla {
+
+margin: auto;
+border: solid white 5px;
+
+
+}
+
+.textoAlineado {
+
+text-align: center;
+
+}
+
+img {
+
+	width: 200px;
+}
+
+body {
+
+font-family: Calibri;
+font-size: 6pt;
+color: red;
+background-image: url("../imagenes/humo-fondo.jpg");
+
+}
+
+@media (min-width: 400px) {
+
+body {
+
+	font-family: Cambria;
+	font-size: 8pt;
+	color: blue;
+	background-image: url("../imagenes/lapices-fondo.jpg");
+
+	}
+
+}
+
+@media (min-width: 800px) {
+
+	body {
+
+	font-family: ComicSans;
+	font-size: 10pt;
+	color: green;
+	background-image: url("../imagenes/fondo-figura.jpg");
+
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	body {
+
+	font-family: ComicSans;
+	font-size: 8pt;
+	color: blue;
+	background-image: url("../imagenes/atardecer-fondo.jpg");
+
+	}
+}
+
+@media (min-width: 1600px) {
+
+	body {
+
+	font-family: ComicSans;
+	font-size: 16pt;
+	color: orange;
+	background-image: url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png");
+
+	}
+}
+
+
