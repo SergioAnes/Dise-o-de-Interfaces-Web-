@@ -1,0 +1,77 @@
+
+html, body, main, section, article {
+
+	height: 100%;
+}
+
+header {
+
+font-size: 10;
+height: 10%;
+background: gray;
+text-align: center;
+
+}
+
+
+.menu {
+
+background: lightgreen;
+text-align: center;
+height: 5%;
+border: solid white 4px;
+
+
+}
+
+.contenedora {
+	text-align: center;
+	height: 100%;
+	background: white;
+	border: solid white 4px;
+
+}
+
+.leftsidebar {
+
+float: left;
+background: dimgray;
+height: 100%;
+
+}
+
+
+.bloques {
+
+	background: lightyellow;
+	height: 40%;
+	width: 44%;
+	display: inline-block;
+}
+
+.rightsidebar {
+
+float: right;
+background: dimgray;
+height: 100%;
+
+}
+
+.content {
+
+	text-align: center;
+	background: lightblue;
+	height: 58%;
+	border: solid white 4px;
+
+
+}
+
+footer {
+
+	background: lightgreen;
+	height: 5%;
+	text-align: center;
+	border: solid white 4px;
+
+}
