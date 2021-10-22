@@ -1,0 +1,39 @@
+
+/*Muestra como imagen de fondo "torre bujaco.jpg" repetido horizontalmente 
+Todo el documento va a tener como tipo de letra "Verdana" color de los caracteres "2F7210" en negrilla, 
+el tamaño del tipo de letra va a depender de la resolución, así si la misma es inferior a 525 pixeles el tamaño va a ser de 8 puntos, 
+si la resolución está comprendida entre 525 pixeles y 1100 pixeles el tamaño 
+va a ser de 10 puntos y si la resolución es superior a 1100 pixeles el tamaño va a ser de 12 puntos.*/
+
+body {
+
+
+background: url("../../imagenes/torre bujaco.jpg");
+background-repeat: repeat-x;
+font-family: "Verdana";
+color: #2F7210;
+font-weight: bold;
+font-size: 8pt;
+
+
+}
+
+
+@media (min-width: 525px) {
+
+	body {
+
+	font-size: 10pt;
+
+	}
+}
+
+
+@media (min-width: 1100px) {
+
+	body {
+
+	font-size: 12pt;
+
+	}
+}

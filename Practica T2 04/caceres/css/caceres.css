@@ -1,0 +1,74 @@
+
+/*Todo el documento va a tener como tipo de letra "Lucida Sans", color de los caracteres "690C26" en negrilla, 
+el tamaño del tipo de letra va a depender de la resolución, así si la resolución es inferior a 600 pixeles el tamaño va a ser de 11 puntos, 
+si la resolución está comprendida entre 600 pixeles y 1200 pixeles el tamaño va a ser de*/
+
+body {
+
+
+font-family: "Lucida Sans";
+color: #690C26;
+font-weight: bold;
+font-size: 11pt;
+
+}
+
+
+
+@media (min-width: 600px) {
+
+body {
+
+	font-size: 12pt;
+}
+
+
+}
+
+@media (min-width: 1200px) {
+
+body {
+
+	font-size: 13pt;
+}
+
+
+}
+
+/*Para los párrafos de la clase "c1" muestra como imagen de fondo la imagen "torre bujaco.jpg" dicha imagen se va a mostrar a partir del contexto 
+y si tiene un tamaño superior se deberá omitir la parte que sobresale. El texto deberá aparecer tachado.*/
+
+
+.c1 {
+
+	text-decoration: line-through;
+	background:  url("../../imagenes/torre bujaco.jpg");
+	background-clip: content-box;
+	overflow: hidden;
+
+}
+
+/*Para los párrafos de la clase "c2" muestra como imagen de fondo la imagen "palacio ovando.jpg" 
+dicha imagen se va a mostrar a partir del relleno y si tiene un tamaño 
+superior se deberá omitir la parte que sobresale en el ancho.*/
+
+.c2 {
+
+	background-image: url("../../imagenes/palacio ovando.jpg");
+	background-clip:padding-box;
+	overflow: hidden;
+}
+
+/*Para los párrafos de la clase "c3" muestra como imagen de fondo la imagen "iglesia santiago.jpg" dicha imagen 
+se va a mostrar a partir del borde y si tiene un tamaño superior 
+se deberá omitir la parte que sobresale en el alto.*/
+
+
+.c3 {
+
+	background-image: url("../../imagenes/iglesia santiago.jpg");
+	background-clip:border-box;
+	overflow: hidden;
+
+
+}
