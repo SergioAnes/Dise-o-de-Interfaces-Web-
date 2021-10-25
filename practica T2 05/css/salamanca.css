@@ -1,0 +1,153 @@
+
+/*Al párrafo div con identificador inicio aplicaremos las siguientes características:
+a. márgenes alrededor del párrafo de 14px
+b. bordes de 1px de una línea de color rojo.
+c. relleno alrededor de 5px
+d. sobrelinea de 2px de color amarillo
+e. color de fondo del párrafo azul a partir del borde*/
+
+#inicio {
+
+margin: 14px;
+border: 1px solid red;
+padding: 5px;
+outline: 2px solid yellow;
+background-color: lightblue;
+background-clip: border-box;
+
+}
+
+
+/*2. Al párrafo div con identificador historia aplicaremos las siguientes características:
+a. borde superior de 2px trazo doble de color naranja
+b. borde inferior de 1px trazo de punto de color amarillo
+c. borde izquierdo de 3px trazo discontinuo de color marrón
+d. borde derecho de 1px trazo tipo tejado de color A292A4
+e. relleno superior 5px
+f. relleno izquierdo 7px
+g. relleno derecho 3px
+h. relleno inferior 2px
+i. sobrelínea de 5px
+j. color sobrelínea 7C0707
+k. sombra izquierda y abajo en color 4A5860
+l. color de fondo del párrafo B2EBA9 a partir del relleno
+m. color de fondo del documento C2AD85
+n. margen superior 20px
+o. margen izquierdo 30px
+p. margen derecho 15px
+q. margen inferior 10px*/
+
+#historia {
+
+	border-top: 2px double orange;
+	border-bottom: 1px dotted yellow;
+	border-left: 3px dashed brown;
+	border-right: 1px inset #A292A4;
+	padding-top: 5px;
+	padding-left: 7px;
+	padding-right: 3px;
+	padding-bottom: 2px;
+	outline: 5px;
+	outline-color: #7C0707;
+	text-shadow:-1px 1px 0 #4A5860;
+	background-color: #B2EBA9;
+	background-clip: padding-box;
+	margin-top: 20px;
+	margin-left: 30px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+
+}
+
+/*3. Al párrafo div con identificador universidad aplicaremos las siguientes características:
+a. margen superior e inferior del párrafo de 14px
+b. margen izquierdo y derecho del párrafo de 24px
+c. bordes de 5px de una línea de color azul.
+d. relleno superior e inferior de 7px
+e. relleno izquierdo y derecho de 11px
+f. sobrelinea de 3px de color rojo
+g. color de fondo del párrafo verde a partir del contenido*/
+
+
+#universidad {
+
+	margin:  14px 24px 14px 24px;
+	border: 5px solid blue;
+	padding: 7px 11px 7px 11px;
+	outline: 3px solid red; 
+	background-color: green;
+	background-clip: content-box;
+}
+
+/*4. Al párrafo div con identificador conchas aplicaremos las siguientes características:
+a. margen superior e inferior del párrafo de 10px
+b. margen izquierdo y derecho del párrafo de 20px
+c. bordes de 3px de una línea de color verde.
+d. relleno superior e inferior de 5px
+e. relleno izquierdo y derecho de 7px
+f. sobrelinea de 1px de color gris.
+g. Imagen de fondo casa-conchas-salamanca.jpg se mostrará sin repetir ajusto al párrafo y se muestra a partir del margen.*/
+
+
+#conchas {
+
+	margin: 10px 20px 10px 20px;
+	border: 3px solid green;
+	padding: 5px 7px 5px 7px;
+	outline: 1px gray;
+	background-image: url("../imagenes/casa-conchas-salamanca.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-origin:border-box;
+
+}
+
+/*5. Al párrafo div con identificador nueva aplicaremos las siguientes características:
+a. márgenes alrededor del párrafo de 17px
+b. bordes de 4px de una línea de color violeta.
+c. relleno alrededor de 8px
+d. sobrelinea de 1px de color naranja
+e. Imagen de fondo catedral-nueva.jpg se mostrará sin repetir ajusto al párrafo y se muestra a partir del relleno.
+*/
+
+#nueva {
+
+	margin: 17px;
+	border: 4px solid violet;
+	padding: 8px;
+	outline: 1px solid orange;
+	background-image: url("../imagenes/catedral-nueva.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-origin: padding-box;
+
+}
+
+/*6. Al párrafo div con identificador vieja aplicaremos las siguientes características:
+a. margen superior e izquierdo del párrafo de 15px
+b. margen inferior y derecho del párrafo de 11px
+c. bordes superior e izquierdo de 5px de una línea de color marrón.
+d. bordesinferior y derecho de 4px de una línea de color naranja
+e. relleno superior e izquierdo de 9px
+f. relleno inferior y derecho de 8px
+g. sobrelinea de 3px de color amarillo.
+h. Imagen de fondo catedral-vieja.jpg se mostrará sin repetir ajusto al párrafo y se muestra a partir del contenido.
+*/
+
+
+#vieja {
+
+ margin: 15px 11px 11px 15px;
+ border: 5px 4px 4px 5px; /*Recordemos que si pongo dos luego se replica ese orden en los que faltarían (pongo arriba y derecha y ese orden se replica abajo e izquierda*/
+ border-style: solid;
+ border-color: brown orange orange brown;
+ padding: 9px 8px 8px 9px;
+ outline: 3px yellow;
+ background-image: url("../imagenes/catedral-vieja.jpg");
+ background-repeat: no-repeat;
+ background-size: cover; /* contain se queda como pequeña, porque solo se ajusta en alto o en ancho*/
+ background-origin: content-box; /*Está también el padding box y el border box. El padding como que se ajusta a la caja, el border parece que tambien y el content deja espacios*/
+
+
+
+}
