@@ -1,0 +1,143 @@
+
+/* El párrafo div con identificador divisiones se va a mostrar con estructura de grid va a tener un borde de color magenta. En esta caja:
+i. si la resolución es menor de 400 pixeles va a tener una columna y nueve filas
+ii. si la resolución está comprendida entre 400 pixeles y 800 pixeles va a tener cinco filas y dos columnas
+iii. si la resolución es superior a 800 pixeles esta caja va a tener tres filas y tres columnas.
+iv. Todas las columnas van a tener el mismo ancho, que va a ser el 32% del ancho del padre.
+v. Todas las filas van a tener la misma altura, que será de 500px.
+vi. Los párrafos div hijos del párrafo div con identificador divisiones se van a colocar por filas
+1. se van a mostrar con un borde de color verde.
+2. las filas van a tener una separación entre ellas de 10px
+3. las columnas van a tener una separación entre ellas de 15px.*/
+
+#divisiones {
+	display:grid;
+	border: magenta 2px solid;
+	grid-template-columns: 32%; 
+	grid-template-rows: repeat(9, 500px);
+	grid-row-gap: 10px; /* Esto lo pongo aquí porque si lo pongo en #divisiones > div no hace nada ¿Supongo que tendrá que estar en el elemento padre?*/
+	grid-column-gap: 15px;  /* Esto lo pongo aquí porque si lo pongo en #divisiones > div no hace nada ¿Supongo que tendrá que estar en el elemento padre?*/
+	grid-auto-flow: row; /* Para indicar como se colocan los elementos para los que no se ha indicado su posición en la rejilla.*/
+}
+
+@media (min-width: 400px) {
+	#divisiones {
+
+	grid-template-columns: 32%, 32%; 
+	grid-template-rows: repeat(5, 500px);
+	}
+}
+
+@media (min-width: 800px) {
+	#divisiones {
+
+	grid-template-columns: 32%, 32%, 32%; 
+	grid-template-rows: repeat(3, 500px);
+	}
+}
+#divisiones > div {
+	border: green 2px solid;
+}
+
+/* El párrafo div con identificador secciones se va a mostrar con estructura de grid va a tener un borde de color violeta. En esta caja:
+i. si la resolución es inferior a 300 pixeles se va a mostrar con dieciocho filas y una columna
+ii. si la resolución está comprendida entre 300 y 600 pixeles se va a mostrar con nueve filas y dos columnas
+iii. si la resolución está comprendida entre 600 pixeles y 900 pixeles se va a mostrar con seis filas y tres columnas
+iv. si la resolución es superior a 900 pixeles se va a mostrar con tres filas y seis columnas.
+v. Todas las columnas van a tener el mismo ancho, que va a ser el 31% del ancho del padre.
+vi. Todas las filas van a tener la misma altura, que será de 400px.
+vii. Los párrafos div hijos del párrafo div con identificador secciones van a tener:
+1. borde de color azul
+2. se van a colocar en la caja en columnas.
+3. las filas van a tener una separación de 3 mm
+4. las columnas van a tener una separación del 1%.
+*/ 
+#secciones {
+
+	display: grid;
+	border: violet 2px solid;
+	grid-template-columns: 31%;
+	grid-template-rows: repeat(18, 400px);
+	grid-auto-flow: column; /* Para indicar como se colocan los elementos para los que no se ha indicado su posición en la rejilla.*/
+	grid-row-gap: 3mm; /* Esto lo pongo aquí porque si lo pongo en #divisiones > div no hace nada ¿Supongo que tendrá que estar en el elemento padre?*/
+	grid-column-gap: 1%; /* Esto lo pongo aquí porque si lo pongo en #divisiones > div no hace nada ¿Supongo que tendrá que estar en el elemento padre?*/
+}
+
+@media (min-width:  300) {
+	#secciones  {
+
+		grid-template-columns: repeat(2, 31%);
+		grid-template-rows: repeat(9, 400px);
+	}
+}
+
+@media (min-width: 600) {
+	#secciones  {
+
+		grid-template-columns: repeat(3, 31%);
+		grid-template-rows: repeat(6, 400px);
+	}
+}
+
+@media (min-width: 900) {
+	#secciones  {
+
+		grid-template-columns: repeat(6, 31%);
+		grid-template-rows: repeat(3, 400px);
+	}
+}
+
+#secciones > div {
+	border: blue 2px solid;
+}
+
+
+/* El párrafo div con identificador catedral se va a mostrar con estructura de grid. va a tener:
+i. borde de color violeta
+ii. va a tener cuatro filas y tres columnas
+iii. las columnas van a tener un tamaño del 20%, 35% y 40 % respectivamente.
+iv. las filas van a tener un tamaño de 550 pixeles, 750 pixeles, 650 pixeles y 450 pixeles respectivamente.
+v. los párrafos div hijos del párrafo div con identificador catedral van a tener un borde de color rojo.
+vi. las columnas van a tener una separación del 1%
+vii. las filas van a tener una separación de 0’1 pulgadas.
+viii. vamos a colocar el párrafo div hijo con identificador cate01 en la segunda fila tercera columnas
+ix. vamos a colocar el párrafo div hijo con identificador cate02 en la cuarta fila segunda columna
+x. vamos a colocar el párrafo div hijo con identificador cate03 en la primera fila segunda columna
+xi. vamos a colocar el párrafo div hijo con identificador cate04 en la tercera fila primera columna
+xii. vamos a colocar el resto de párrafos div hijos se van a colocar en los primeros huecos disponibles.
+*/ 
+
+#catedral {
+	display: grid;
+	border: purple 2px solid;
+	grid-template-rows: 550px,750px,650px,450px;
+	grid-template-columns: 20%,35%,40%;
+	grid-row-gap: 0,1in;
+	grid-column-gap: 1%;
+	grid-auto-flow: dense; /* intenta rellenar los huecos que queden libres en la cuadrícula,*/
+}
+
+ #catedral > div {
+ 	border: red 2px solid;
+ }
+
+ #catedral > #cate01 {
+ 	grid-row: 2;   /* Si pongo lo mismo pero con el grid-row-start y el grid-column-end hace lo mismo, pero creo que eso se usa cuando se quiere que ocupen varias celdas*/
+ 	grid-column: 3;
+ }
+
+  #catedral > #cate02 {
+ 	grid-row: 4;
+ 	grid-column: 2;
+ }
+
+  #catedral > #cate03 {
+ 	grid-row: 1;
+ 	grid-column: 2;
+ }
+
+  #catedral > #cate04{
+ 	grid-row: 3;
+ 	grid-column: 1;
+ }
+

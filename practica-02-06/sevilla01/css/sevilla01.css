@@ -1,0 +1,96 @@
+
+/* Los párrafos div con identificadores primero, segundo, tercero y cuarto, todos ellos hijos del párrafo 
+div con identificador historia se van a mostrar con estructura de flexbox. Estos párrafos van a tener
+i. ancho del 100% del ancho de visualización,
+ii. alto de 800 pixeles
+iii. borde de color verde*/
+
+#historia > #primero,#segundo,#tercero,#cuarto {
+	display: flex;
+	width: 100%;
+	height: 800px;
+	border: green 2px solid;
+}
+
+
+/* Cada uno de los párrafos div hijos de los párrafos div con 
+identificadores primero, segundo, tercero y cuarto, todos ellos hijos del párrafo div con identificador historia van a tener:
+i. ancho del 30%
+ii. alto de 600 pixeles
+iii. borde de color amarillo.*/
+
+#historia>#primero,#segundo,#tercero,#cuarto > div {
+	width: 30%;
+	height: 600px;
+	border: yellow 2px solid;
+
+
+}/* El párrafo div con identificador primero va a tener una alineación vertical al inicio de la caja, 
+se va a mostrar en fila. Vamos a incrementar el tamaño del tercer hijo para hacer que se complete el tamaño del padre..*/
+
+
+#primero {
+	align-items: flex-start;
+	flex-direction: row;
+
+}
+
+/* Vamos a incrementar el tamaño del tercer hijo para hacer que se complete el tamaño del padre..*/
+
+#primero >div:nth-child(3) {
+	flex-grow: 2; /* La propiedad flex-grow especifica el factor de crecimiento de un elemento flexible. Creo que aquí no hace nada*/
+}
+
+/* El párrafo div con identificador segundo va a tener una alineación vertical centrada, se va a mostrar en fila inversa. 
+Vamos a hacer que el primero de los párrafos hijos crezca para ocupar el espacio que sobra.*/
+
+div#segundo {
+	align-items: center;
+	flex-direction: row-reverse;
+}
+
+div#segundo>div:first-child {
+	flex-grow: 2; /* ESTOS NO ME FUNCIONAN YO CREO, ¿POR QUÉ?*/
+
+}
+
+/*El párrafo div con identificador tercero va a tener una alineación vertical al final. Vamos a cambiar el orden de visualización, mostrando:
+i. en primer lugar el tercer párrafo div hijo
+ii. en segundo lugar el primer párrafo div hijo
+iii. en tercer lugar el segundo párrafo div hijo.*/
+
+/*EL Z-INDEX NO VA?*/
+
+#tercero {
+	align-items: flex-end;
+}
+
+#tercero >div:first-child{
+	order: 2;
+}
+
+#tercero >div:nth-child(2){
+	order: 3;
+}
+
+#tercero >div:nth-child(3){
+	order: 1;		
+}
+/*El párrafo div con identificador cuarto va a tener una alineación vertical a la base de la línea. 
+Vamos a hacer que el tamaño de los párrafos crezca para llenar el ancho de visualización de tal forma que:
+i. el incremento del segundo párrafo div hijo sea el doble del incremento del primer párrafo div hijo.*/
+
+#cuarto {
+	align-items: baseline;
+}
+
+#cuarto>div:nth-child(2){
+	flex-grow: 2; /*Parece que sí valen aquí los flex-grow*/
+	color: red;
+}
+
+#cuarto>div:first-child{
+	flex-grow: 1;
+	color: blue;
+	
+}
